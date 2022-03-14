@@ -66,3 +66,29 @@ header div p {
 	background-color: black;
 	padding: 4px;
 }
+
+main {
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+main section {
+	width: 500px;
+	margin: 10px;
+	padding: 10px;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+main section div {
+	display: flex;
+	justify-content: space-between;
+}
+
+main section img {
+	margin: 0 auto;
+}
