@@ -104,6 +104,8 @@ main section div {
 
 main section img {
 	margin: 0 auto;
+	width: 350px;
+	height: 200px;
 }
 
 footer {
@@ -118,4 +120,25 @@ footer {
 
 footer a {
 	padding: 0 3px;
+}
+
+@media screen and (max-width: 600px) {
+	nav {
+		flex-wrap: wrap;
+	
+	}
+	.title {
+		order: -1;
+		flex: 100%;
+	}
+	main section {
+		width: calc(100% - 20px);
+		max-width: 500px;
+	}
+	
+	main section img {
+		width: 70%;
+		max-width: 350px;
+		height: auto;
+	}
 }
