@@ -35,3 +35,34 @@ nav div {
 .request-cv {
 	justify-content: flex-end;
 }
+
+header {
+	width: 100%;
+	height: 400px;
+	background-image: url("resources/about-background.jpg");
+	background-color: white;
+	background-size: 1920px;
+	background-position: top right;
+	padding-right: 10%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+header div {
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+header div h2 {
+	background-color: black;
+	padding: 4px;
+	margin: 0;
+}
+
+header div p {
+	background-color: black;
+	padding: 4px;
+}
