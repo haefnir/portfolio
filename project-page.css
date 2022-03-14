@@ -104,3 +104,21 @@ footer {
 footer a {
 	padding: 0 3px;
 }
+
+@media screen and (max-width: 600px) {
+	nav {
+		flex-wrap: wrap;
+		height: 120px;
+	}
+	.title {
+		order: -1;
+		flex: 100%;
+	}
+	header img {
+		width: 100%;
+		max-width:100%;
+	}
+	header div {
+		width: 100%;
+	}
+}
