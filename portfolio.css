@@ -1,0 +1,169 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: black;
+	color: white;
+	font-family: "Roboto", Sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: DarkGray;
+}
+
+nav {
+	height: 60px;
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+}
+
+nav div {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.navbar {
+	justify-content: flex-start;
+}
+
+.navbar a{
+	padding: 0 20px 0 0;
+}
+
+.request-cv {
+	justify-content: flex-end;
+}
+
+header {
+	background-image: url("resources/about-background.jpg");
+	background-color: white;
+	background-size: 1920px;
+	background-position: top right;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.index header {
+	height: 400px;
+	padding-right: 10%;
+	justify-content: flex-end;
+}
+
+.project-page header {
+	width: 100%;
+	padding: 5%;
+	justify-content: space-between;
+}
+
+.project-page header img {
+	max-width: 80%;
+}
+
+header div {
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+header div h2 {
+	background-color: black;
+	padding: 4px;
+	margin: 0;
+}
+
+header div h3 {
+	background-color: black;
+	padding: 4px;
+	margin: 0;
+}
+
+header div p {
+	background-color: black;
+	padding: 4px;
+}
+
+main {
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+main section {
+	width: 500px;
+	margin: 10px;
+	padding: 10px 30px;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+main section div {
+	display: flex;
+	justify-content: space-between;
+}
+
+main section img {
+	margin: 0 auto;
+	width: 350px;
+	height: 200px;
+}
+
+footer {
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+}
+
+footer a {
+	padding: 0 3px;
+}
+
+@media screen and (max-width: 600px) {
+	nav {
+		flex-wrap: wrap;
+		height: 120px;
+	}
+	.title {
+		order: -1;
+		flex: 100%;
+	}
+	.index header {
+		justify-content: center;
+	}
+	.project-page header img {
+		width: 100%;
+		max-width:100%;
+	}
+	.project-page header div {
+		width: 100%;
+	}
+	main section {
+		width: calc(100% - 20px);
+		max-width: 500px;
+	}
+	
+	main section img {
+		width: 70%;
+		max-width: 350px;
+		height: auto;
+	}
+}
