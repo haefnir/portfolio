@@ -1,7 +1,9 @@
-* {
-  box-sizing: border-box;
+$body-bg: #000;
+$card-height: 100%;
+
+body {
+  padding-bottom: 50px;
 }
 
-a {
-  color: blue;
-}
+
+@import "node_modules/bootstrap/scss/bootstrap";
