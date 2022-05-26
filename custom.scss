@@ -5,5 +5,25 @@ body {
   padding-bottom: 50px;
 }
 
+.fadeonload {
+  opacity:0;
+}
+
+.fadein-scroll {
+  opacity: 0;
+  bottom: -300px;
+}
+
+.projects-header {
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+}
+
+.card {
+  max-width: 500px;
+  margin: auto;
+}
+
 
 @import "node_modules/bootstrap/scss/bootstrap";
