@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.fadeonload').each( function(i){
+    $('.fadeonload').each(function(i){
             $(this).animate({'opacity':'1'},1200);
     });
 });
@@ -12,8 +12,8 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $(window).scroll(function () {
-        $('.fadein-scroll').each(function (i) {
+    $(window).scroll(function() {
+        $('.fadein-scroll').each(function(i) {
             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if ((bottom_of_window + 450) > bottom_of_element) {

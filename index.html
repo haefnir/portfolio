@@ -6,8 +6,6 @@
 	<title>Seb Lamberts - Portfolio</title>
 	<link rel="stylesheet" href="custom.css">
 	<script src="https://kit.fontawesome.com/2328fcd1b3.js" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 	<script src="index.js" defer></script>
 </head>
 <body>
@@ -33,6 +31,8 @@
 			background-color: black;
 			background-position: top left;
 			background-size: 1920px;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
 			height: 600px;
 			display: flex;">
 		<div class="fadeonload d-flex flex-column align-items-start col col-md-8 col-lg-6 m-auto p-2">
@@ -45,7 +45,7 @@
 		</div>
 	</header>
 	<main>
-		<span id="projects" style="position: relative; top: -104px"></span>
+		<span id="projects"></span>
 		<h2 class="projects-header text-white text-center bg-black pt-5 pb-2 mb-5">Projects</h2>
 		<div class="container-fluid d-flex justify-content-center px-5">
 			<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
@@ -125,5 +125,7 @@
 			<a class="link-light" href="mailto:seb.lamberts@eyup.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
 		</div>
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
