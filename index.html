@@ -4,92 +4,128 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Seb Lamberts - Portfolio</title>
-	<link rel="stylesheet" href=normalize.css>
-	<link rel="stylesheet" href=portfolio.css>
+	<link rel="stylesheet" href="custom.css">
 	<script src="https://kit.fontawesome.com/2328fcd1b3.js" crossorigin="anonymous"></script>
+	<script src="index.js" defer></script>
 </head>
-<body class="index">
-	<nav>
-		<div class="navbar">
-			<a href="#about">About</a>
-			<a href="#portfolio">Portfolio</a>
-			<a href="#contact">Contact</a>
-		</div>
-		<div class="title">
-			<h1>Seb Lamberts</h1>
-		</div>
-		<div class="request-cv">
-			<a href="#">Request CV</a>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="nav navbar-nav">
+					<li class="nav-item"><a href="#" class="nav-link text-white">About</a></li>
+					<li class="nav-item"><a href="#projects" class="nav-link text-white">Projects</a></li>
+					<li class="nav-item"><a href="#" class="nav-link disabled">Download CV</a></li>
+				</ul>
+			</div>
+			<div class="navbar-header position-absolute top-50 start-50 translate-middle">
+				<a class="text-decoration-none text-white h1 mx-0" href="#">Seb Lamberts</a>
+			</div>
 		</div>
 	</nav>
-	
-	<header id="about">
-		<div>
-			<h2>About</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	<header id="about" class="container-fluid"
+			style="background-image: url('./resources/about-background.jpg');
+			background-color: black;
+			background-position: top left;
+			background-size: 1920px;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			height: 600px;
+			display: flex;">
+		<div class="fadeonload d-flex flex-column align-items-start col col-md-8 col-lg-6 m-auto p-2">
+			<p class="d-inline-flex bg-black text-white p-2 fs-5">Hi, my name is Seb, and I am a full-stack software developer from York.<br><br>
+			I am currently in the final weeks of iO Academy's Full-Stack Track bootcamp,
+			being provided by the EyUp Coding academy in Sheffield.<br>
+			I have a keen interest in problem-solving, and am geared towards back-end technologies.<br>
+			I am also a Certified Scrum Master.<br><br>
+			Outside of programming I enjoy tabletop gaming, live music, and bad movies.</p>
 		</div>
 	</header>
-	
-	<main id="portfolio">
-		<a href="project-1.html"><section>
-			<div>
-				<h3>Project 1</h3>
-				<h4>dd.mm.yyyy</h4>
-			</div>
-			<img src="https://via.placeholder.com/350x200" alt="Project 1"/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		</section></a>
+	<main>
+		<span id="projects"></span>
+		<h2 class="projects-header text-white text-center bg-black pt-5 pb-2 mb-5">Projects</h2>
+		<div class="container-fluid d-flex justify-content-center px-5">
+			<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+				<div class="col p-2">
+					<div class="card border-0">
+						<img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 1">
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title">Property Listing Website</h5>
+							<h6 class="card-subtitle mb-1 text-muted">20.05.2022</h6>
+							<p class="card-text">A mock property listing website built using MySQL, PHP, and Bootstrap 5. Data was taken from a custom-built API</p>
+							<a href="project-1.html" class="btn btn-dark align-self-center mt-auto">See more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col p-2">
+					<div class="card border-0">
+						<img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 2">
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title">JavaScript Game</h5>
+							<h6 class="card-subtitle mb-1 text-muted">22.04.2022</h6>
+							<p class="card-text">A browser game built using JavaScript. Players have to try to locate all the targets before they run out of lives</p>
+							<a href="project-2.html" class="btn btn-dark align-self-center mt-auto">See more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col p-2">
+					<div class="card border-0">
+						<img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 3">
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title">Food Delivery App</h5>
+							<h6 class="card-subtitle mb-1 text-muted">05.05.2022</h6>
+							<p class="card-text">A mock food delivery app built using React and Sass.</p>
+							<a href="project-3.html" class="btn btn-dark align-self-center mt-auto">See more</a>
+						</div>
+					</div>
+				</div>
 
-		<a href="project-2.html"><section>
-			<div>
-				<h3>Project 2</h3>
-				<h4>dd.mm.yyyy</h4>
+				<div class="col p-2">
+					<div class="card border-0">
+						<img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 1">
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title">Property Listing Website</h5>
+							<h6 class="card-subtitle mb-1 text-muted">20.05.2022</h6>
+							<p class="card-text">A mock property listing website built using MySQL, PHP, and Bootstrap 5. Data was taken from a custom-built API</p>
+							<a href="project-1.html" class="btn btn-dark align-self-center mt-auto">See more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col p-2">
+					<div class="card border-0">
+						<img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 2">
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title">JavaScript Game</h5>
+							<h6 class="card-subtitle mb-1 text-muted">22.04.2022</h6>
+							<p class="card-text">A browser game built using JavaScript. Players have to try to locate all the targets before they run out of lives</p>
+							<a href="project-2.html" class="btn btn-dark align-self-center mt-auto">See more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col p-2">
+					<div class="card border-0">
+						<img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Project 3">
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title">Food Delivery App</h5>
+							<h6 class="card-subtitle mb-1 text-muted">05.05.2022</h6>
+							<p class="card-text">A mock food delivery app built using React and Sass.</p>
+							<a href="project-3.html" class="btn btn-dark align-self-center mt-auto">See more</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<img src="https://via.placeholder.com/350x200" alt="Project 2"/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		</section></a>
-
-		<a href="project-3.html"><section>
-			<div>
-				<h3>Project 3</h3>
-				<h4>dd.mm.yyyy</h4>
-			</div>
-			<img src="https://via.placeholder.com/350x200" alt="Project 3"/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		</section></a>
-		
-		<a href="project-4.html"><section>
-			<div>
-				<h3>Project 4</h3>
-				<h4>dd.mm.yyyy</h4>
-			</div>
-			<img src="https://via.placeholder.com/350x200" alt="Project 4"/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		</section></a>
-
-		<a href="project-5.html"><section>
-			<div>
-				<h3>Project 5</h3>
-				<h4>dd.mm.yyyy</h4>
-			</div>
-			<img src="https://via.placeholder.com/350x200" alt="Project 5"/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		</section></a>
-
-		<a href="project-6.html"><section>
-			<div>
-				<h3>Project 6</h3>
-				<h4>dd.mm.yyyy</h4>
-			</div>
-			<img src="https://via.placeholder.com/350x200" alt="Project 6"/>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		</section></a>
+		</div>
 	</main>
-	
-	<footer id="contact">
-		<a href="https://github.com/haefnir" target="_blank"><i class="fa-brands fa-github"></i></a>
-		<a href="https://www.linkedin.com/in/seb-lamberts" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-		<a href="mailto:seb.lamberts@eyup.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+	<footer id="contact" class="navbar navbar-dark fixed-bottom bg-black d-flex justify-content-center">
+		<div class="fs-4">
+			<a class="link-light" href="https://github.com/haefnir" target="_blank"><i class="fa-brands fa-github"></i></a>
+			<a class="link-light" href="mailto:seb.lamberts@eyup.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+		</div>
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
