@@ -1,15 +1,19 @@
+function scrollBars(){
+    var body= $('body')[0]
+    return body.scrollHeight>window.innerHeight
+}
+
 $(document).ready(function() {
     $('.fadeonload').each(function(i){
             $(this).animate({'opacity':'1'},1200);
     });
 });
 
-$(document).ready(function() {
-    var cards = document.querySelectorAll('.card');
-    cards.forEach((card)=>{
-        card.classList.add('fadein-scroll');
+if (!scrollBars()) {
+    $('.fadein-scroll').each(function(i) {
+        $(this).animate({'opacity': '1','bottom': '0'}, 1000);
     })
-});
+}
 
 $(document).ready(function() {
     $(window).scroll(function() {
